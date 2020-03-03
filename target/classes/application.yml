@@ -1,0 +1,24 @@
+spring:
+  thymeleaf:
+    cache: false
+  mvc:
+    date-format: yyyy-MM-dd
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://localhost:3306/company?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filter: stat,wall
+  mail:
+    username: 304858505@qq.com
+    password: thjjicnfvoidcafb
+    host: smtp.qq.com
+    properties: {mail.smtp.ssl.enable: true}
+server:
+  servlet:
+    context-path: /qiumengke
+mybatis:
+  type-aliases-package: com.qiumengke.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
